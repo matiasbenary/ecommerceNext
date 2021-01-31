@@ -59,8 +59,6 @@ export default function Product () {
               <button onClick={addProduct} className="w-full flex items-center justify-center px-2 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 md:py-4 md:text-lg md:px-10">
                 Agregar al carrito
               </button>
-              <Link href="cart">
-                <button className="w-full flex items-center justify-center px-2 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10" >Ir al carrito</button></Link>
             </div>
             <p className="mt-4">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda eum aliquid quos? Accusamus eos animi culpa nobis, odit fuga, asperiores quaerat natus tenetur mollitia, dolorum quos? Alias amet libero numquam.

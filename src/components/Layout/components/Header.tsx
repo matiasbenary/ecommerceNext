@@ -1,9 +1,13 @@
+import { CartContext } from '@context/CartContext'
+import { CartType } from '@typings/CartType'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { IoCart, IoMenuOutline } from 'react-icons/io5'
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false)
+  const { products } = useContext(CartContext) as CartType
+
   return (
     <header className="lg:px-16 px-6 bg-white flex flex-wrap justify-between items-center lg:py-4 py-2 shadow-sm mx-auto">
       <h3>Logo</h3>
@@ -11,7 +15,7 @@ const Header = () => {
       <div className="flex lg:order-1 cursor-pointer">
         <div className="text-md text-4xl relative">
           <span className="w-4 h-4 rounded-full absolute left-6 leading text-xs bg-yellow-200 flex items-center justify-center">
-            2
+            {products}
           </span>
           <IoCart className="text-black h-8 w-8" />
         </div>
