@@ -31,7 +31,11 @@ const cartMock: Item[] = [
 
 export const CartContext = createContext<CartType | null>(null)
 
-const CartProvider: React.FC = (props) => {
+type Props = {
+  children: React.ReactNode
+};
+
+const CartProvider = (props:Props) => {
   const [totalProductsCart, setTotalProductsCart] = useState<number>(0)
   const [products, setProducts] = useState<Item[]>(cartMock)
 

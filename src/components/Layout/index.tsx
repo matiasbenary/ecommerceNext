@@ -1,8 +1,9 @@
 import Footer from './components/Footer'
 import Header from './components/Header'
 import React from 'react'
+
 type Props = {
-  children: JSX.Element;
+  children: React.ReactNode
 };
 const Layout = ({ children }: Props) => {
   return (
