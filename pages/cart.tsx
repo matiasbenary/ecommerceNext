@@ -1,6 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import Item from '@components/shared/Cart/components/Item'
-import CartContext from '@context/CartContext'
+import { CartContext } from '@context/CartContext'
+import { CartType } from '@typings/CartType'
 import { Item as ItemType } from '@typings/Item'
 import Head from 'next/head'
 import { useContext } from 'react'
@@ -12,7 +13,7 @@ const getTotal = (items:ItemType[]) => {
 }
 
 const cart = () => {
-  const { products, removeProductCart, updateProductCart } = useContext(CartContext)
+  const { products, removeProductCart, updateProductCart } = useContext<CartType>(CartContext)
   console.log(products)
   return (
         <>

@@ -1,6 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 import Head from 'next/head'
-import CartContext from '@context/CartContext'
+import { CartContext } from '@context/CartContext'
 import React, { useContext, useState } from 'react'
 import Link from 'next/link'
 import Counter from '@components/shared/Counter'
