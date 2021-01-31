@@ -4,9 +4,10 @@ import { CartContext } from '@context/CartContext'
 import React, { useContext, useState } from 'react'
 import Link from 'next/link'
 import Counter from '@components/shared/Counter'
+import { CartType } from '@typings/CartType'
 
 export default function Product () {
-  const { addProductCart } = useContext(CartContext)
+  const { addProductCart } = useContext(CartContext) as CartType
   const [quantity, setQuantity] = useState<number>(1)
   const [flag, setFlag] = useState<boolean>(false)
 
