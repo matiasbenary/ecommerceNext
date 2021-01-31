@@ -6,8 +6,8 @@ import Counter from '@components/shared/Counter'
 
 type Props = {
   item: ItemType;
-  deleteItem: (product: ItemType)=> null;
-  addItem: (product: ItemType)=> null;
+  deleteItem: (product: ItemType)=> void;
+  addItem: (product: ItemType)=> void;
 };
 
 const Item = ({ item, deleteItem, addItem }: Props) => {
