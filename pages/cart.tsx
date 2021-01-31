@@ -13,8 +13,7 @@ const getTotal = (items:ItemType[]) => {
 }
 
 const cart = () => {
-  const { products, removeProductCart, updateProductCart } = useContext<CartType>(CartContext)
-  console.log(products)
+  const { products, removeProductCart, updateProductCart } = useContext(CartContext) as CartType
   return (
         <>
         <Head>

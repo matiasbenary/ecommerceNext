@@ -1,6 +1,6 @@
 import { CartType } from '@typings/CartType'
 import { Item } from '@typings/Item'
-import { createContext, useMemo, useState } from 'react'
+import React, { createContext, useMemo, useState } from 'react'
 
 const cartMock: Item[] = [
   {
