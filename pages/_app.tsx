@@ -3,7 +3,7 @@ import { AppProps } from 'next/app'
 import Layout from '@components/Layout'
 import './Header.css'
 import CartContext from '@context/CartContext'
-import { useMemo, useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import { Item } from '@typings/Item'
 
 const cartMock:Item[] = [
